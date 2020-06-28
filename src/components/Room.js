@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from '../components/Hero'
-import Banner from '../components/Banner'
+// import Hero from '../components/Hero'
+// import Banner from '../components/Banner'
 import { Link } from "react-router-dom";
-import defaultImg from "../images/room-1.jpeg";
+import defaultImg from "../images/room-6.jpeg";
 import PropTypes from "prop-types";
-import { memo } from "react";
+// import { memo } from "react";
 
-const Room = memo(({ room }) => {
+const Room = ({ room }) => {
   const { name, slug, images, price } = room;
   console.log(room);
   return (
@@ -27,7 +27,7 @@ const Room = memo(({ room }) => {
       <p className="room-info">{name}</p>
     </article>
   );
-});
+};
 
 Room.propTypes = {
   room: PropTypes.shape({
