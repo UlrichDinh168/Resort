@@ -4,8 +4,7 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
-import Button from '../components/StyledHero'
-const home = () => {
+const Home = () => {
   return (
     <>
       <Hero>
@@ -20,9 +19,8 @@ const home = () => {
       </Hero>
       <Services />
       <FeaturedRooms />
-      <Button>Hello</Button>
     </>
   );
 };
 
-export default home;
+export default Home;

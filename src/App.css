@@ -487,6 +487,7 @@ h6 {
 .size-inputs {
   display: flex;
 }
+
 .size-input {
   width: 40%;
   padding: 0.2rem;

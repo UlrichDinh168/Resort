@@ -3,14 +3,14 @@ import ReactDOM from "react-dom";
 // import './index.css';
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { RoomProvider } from "./Context";
-import { BrowserRouter } from "react-router-dom";
+import { RoomProvider } from "./context";
+import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
   <RoomProvider>
-    <BrowserRouter>
+    <Router>
       <App />
-    </BrowserRouter>
+    </Router>
   </RoomProvider>,
   document.getElementById("root")
 );
